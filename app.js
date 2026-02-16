@@ -3,6 +3,24 @@
 function renderProfile(data){
   const nameEl = document.getElementById('name');
   nameEl.textContent = data.name || 'Tvé Jméno';
+  // pokud existuje odkaz v datech, zobrazit ho pod jménem
+  const existingLink = document.getElementById('profile-link');
+  if (existingLink) existingLink.remove();
+  if (data.link) {
+    const linkWrap = document.createElement('p');
+    linkWrap.id = 'profile-link';
+    linkWrap.style.margin = '6px 0 0 0';
+    linkWrap.style.color = 'var(--muted)';
+    const a = document.createElement('a');
+    a.href = data.link;
+    a.textContent = data.link;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.style.color = 'var(--accent)';
+    a.style.textDecoration = 'none';
+    linkWrap.appendChild(a);
+    nameEl.parentNode.insertBefore(linkWrap, nameEl.nextSibling);
+  }
 
   const skillsEl = document.getElementById('skills');
   skillsEl.innerHTML = '';

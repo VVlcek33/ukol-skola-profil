@@ -1,0 +1,33 @@
+{
+  "name": "Jan Novák",
+  "skills": [
+    "Python",
+    "Java",
+    "C#",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "SQL (MySQL/PostgreSQL)",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Linux (základy)"
+  ],
+  "projects": [
+    {
+      "title": "Vývoj aplikací od nuly",
+      "description": "Tvorba vlastních projektů s důrazem na čistý kód a funkční design.",
+      "link": "#"
+    },
+    {
+      "title": "Algoritmizace a datové struktury",
+      "description": "Řešení algoritmických úloh v Pythonu/Javě pro pochopení optimalizace.",
+      "link": "#"
+    },
+    {
+      "title": "Verzování a dokumentace",
+      "description": "Praktické využití Gitu, větví a Pull Requestů při vývoji.",
+      "link": "#"
+    }
+  ]
+}

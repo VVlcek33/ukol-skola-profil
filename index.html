@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Osobní IT Profil 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <meta name="description" content="Osobní IT profil studenta - dynamicky načteno z JSONu" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1 id="name">Načítám jméno…</h1>
+      <p class="subtitle">Osobní IT Profil 2.0</p>
+    </header>
+
+    <section class="card about">
+      <h2>O mně</h2>
+      <p>Jsem student informačních technologií se zaměřením na programování a praktické řešení problémů. IT pro mě není jen obor ve škole, ale dlouhodobý zájem — rád zkouším nové technologie, učím se samostatně z dokumentace a buduju vlastní projekty. Nejvíce mě baví pochopit, jak věci fungují „pod kapotou“, a následně vytvořit funkční řešení. Při práci se snažím psát přehledný a udržitelný kód.</p>
+    </section>
+
+    <section class="card">
+      <h2>Dovednosti</h2>
+      <ul id="skills" class="skills-list">
+        <!-- Naplní se z profile.json -->
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Projekty</h2>
+      <section id="projects" class="projects-grid">
+        <!-- Naplní se z profile.json -->
+      </section>
+    </section>
+
+    <section class="card goal">
+      <h2>Cíl</h2>
+      <p>Mým cílem je získat první komerční zkušenost v IT (junior pozice / stáž), kde můžu rozvíjet své schopnosti, naučit se pracovat v týmu a poznat reálný vývoj software.</p>
+    </section>
+
+    <footer class="footer">
+      <small>Profil generován lokálně z <code>profile.json</code></small>
+    </footer>
+  </main>
+</body>
+</html>
